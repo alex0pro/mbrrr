@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBR Meme Coin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
                 <img src="MBR.jpeg" alt="MBR Meme Coin Logo" class="animated-logo">
             </div>
             <h1 class="animated-text">MBR Meme Coin</h1>
-            <p class="animated-text">The Future of Meme Coins.</p>
+            <p class="animated-text">The Future of Meme Coins. Powered by Solana Blockchain.</p>
         </div>
     </header>
 
@@ -21,6 +22,20 @@
         <div class="container">
             <h2 class="animated-text">About MBR Coin</h2>
             <p class="animated-text">Welcome to MBR, the Solana-powered meme coin that’s taking the crypto world by storm. Built on the ultra-fast and cost-effective Solana blockchain, MBR combines the excitement of meme culture with the efficiency and scalability of blockchain technology.</p>
+        </div>
+    </section>
+
+    <section id="how-to-buy">
+        <div class="container">
+            <h2 class="animated-text">How to Buy MBR Meme Coin</h2>
+            <p class="animated-text">To buy MBR Meme Coin, follow these simple steps:</p>
+            <ol class="animated-text">
+                <li>Visit <a href="https://dexscreener.com" target="_blank" class="animated-text">DexScreener</a>.</li>
+                <li>Search for "MBR" in the search bar or paste the contract address below into the search bar.</li>
+                <li>Click on the MBR Meme Coin listing to see the available pairs.</li>
+                <li>Select the token pair (e.g., MBR/USDT) and proceed with the transaction.</li>
+            </ol>
+            <p>Contract Address: <strong>dadas</strong></p>
         </div>
     </section>
 
@@ -47,239 +62,237 @@
             <p>&copy; 2025 MBR Meme Coin. All Rights Reserved. Powered by Blockchain.</p>
         </div>
     </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #181818; /* Dark background */
+            color: #00FF00; /* Neon green to represent crypto elements */
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-size: 1rem;
+        }
+
+        header {
+            background-color: #101010; /* Darker background for header */
+            color: #00FF00;
+            padding: 5rem 0;
+            text-align: center;
+            border-bottom: 2px solid #00FF00; /* Neon green border */
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: rotateLogo 4s infinite ease-in-out;
+            transform-origin: center;
+            transition: transform 1s ease-in-out;
+            transform-style: preserve-3d;
+        }
+
+        .logo:hover img {
+            transform: rotateY(15deg) rotateX(15deg);
+        }
+
+        h1, h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0px 0px 15px #00FF00; /* Neon effect */
+            animation: fadeIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ecf0f1; /* Light grey for readability */
+            animation: fadeIn 2s ease-out;
+        }
+
+        #about, #contract, #how-to-buy, #social-media {
+            padding: 5rem 0;
+            text-align: center;
+            border-bottom: 2px solid #2c3e50; /* Add separator between sections */
+        }
+
+        #contract p a {
+            color: #00FF00;
+            font-weight: bold;
+            text-decoration: none;
+            animation: fadeIn 2s ease-out;
+        }
+
+        #contract p a:hover {
+            text-decoration: underline;
+            color: #FFFF00; /* Highlight color for contract link */
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-btn {
+            background-color: #2c3e50; /* Dark crypto theme buttons */
+            color: #00FF00;
+            padding: 14px 35px;
+            margin: 0 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 1px solid #00FF00;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .social-btn:hover {
+            background-color: #00FF00;
+            color: #181818;
+            border-color: #00FF00;
+        }
+
+        footer {
+            background-color: #101010;
+            color: #00FF00;
+            padding: 2.5rem;
+            text-align: center;
+            border-top: 2px solid #00FF00;
+            font-size: 1rem;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            text-shadow: 0px 0px 5px #00FF00; /* Neon footer text effect */
+        }
+
+        /* 3D logo rotation animation */
+        @keyframes rotateLogo {
+            0% {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+            50% {
+                transform: rotateY(360deg) rotateX(360deg);
+            }
+            100% {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+        }
+
+        /* Text fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button hover effect with floating */
+        @keyframes animated-btn {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .social-btn:hover {
+            animation: animated-btn 0.5s ease-in-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1rem;
+            }
+
+            header {
+                padding: 3rem;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .logo img {
+                width: 120px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .social-btn {
+                padding: 12px 25px;
+                margin: 12px;
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 2rem;
+            }
+
+            .logo img {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .social-btn {
+                padding: 10px 20px;
+                margin: 8px;
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </body>
 </html>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #181818; /* Dark background */
-    color: #00FF00; /* Neon green to represent crypto elements */
-    line-height: 1.6;
-    overflow-x: hidden;
-    font-size: 1rem;
-}
-
-header {
-    background-color: #101010; /* Darker background for header */
-    color: #00FF00;
-    padding: 3rem;
-    text-align: center;
-    border-bottom: 2px solid #00FF00; /* Neon green border */
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.logo img {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-    animation: rotateLogo 4s infinite ease-in-out;
-    transform-origin: center;
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.logo:hover img {
-    transform: rotateY(15deg) rotateX(15deg);
-}
-
-h1, h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 0px 0px 10px #00FF00; /* Neon effect */
-    animation: fadeIn 2s ease-out;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1rem;
-    color: #ecf0f1; /* Light grey for readability */
-    animation: fadeIn 2s ease-out;
-}
-
-#about, #contract, #social-media {
-    padding: 3rem 0;
-    text-align: center;
-}
-
-#contract p a {
-    color: #00FF00;
-    font-weight: bold;
-    text-decoration: none;
-    animation: fadeIn 2s ease-out;
-}
-
-#contract p a:hover {
-    text-decoration: underline;
-    color: #FFFF00; /* Highlight color for contract link */
-}
-
-.social-links {
-    margin-top: 1rem;
-}
-
-.social-btn {
-    background-color: #2c3e50; /* Dark crypto theme buttons */
-    color: #00FF00;
-    padding: 12px 30px;
-    margin: 0 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    border: 1px solid #00FF00;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    animation: fadeIn 2s ease-out;
-}
-
-.social-btn:hover {
-    background-color: #00FF00;
-    color: #181818;
-    border-color: #00FF00;
-}
-
-footer {
-    background-color: #101010;
-    color: #00FF00;
-    padding: 1.5rem;
-    text-align: center;
-    border-top: 2px solid #00FF00;
-    font-size: 0.9rem;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #ecf0f1;
-    text-shadow: 0px 0px 5px #00FF00; /* Neon footer text effect */
-}
-
-/* 3D logo rotation animation */
-@keyframes rotateLogo {
-    0% {
-        transform: rotateY(0deg) rotateX(0deg);
-    }
-    50% {
-        transform: rotateY(360deg) rotateX(360deg);
-    }
-    100% {
-        transform: rotateY(0deg) rotateX(0deg);
-    }
-}
-
-/* Text fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Button hover effect with floating */
-@keyframes animated-btn {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.social-btn:hover {
-    animation: animated-btn 0.5s ease-in-out;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        font-size: 1rem;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .social-btn {
-        padding: 10px 20px;
-        margin: 10px;
-        font-size: 0.9rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 1.5rem;
-    }
-
-    .logo img {
-        width: 100px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 0.85rem;
-    }
-
-    .social-btn {
-        padding: 8px 15px;
-        margin: 5px;
-        font-size: 0.8rem;
-    }
-
-    footer p {
-        font-size: 0.8rem;
-    }
-}
-
-
-
-
-</style>
